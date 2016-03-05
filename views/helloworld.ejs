@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title><%= title %></title>
+    <link href="stylesheets/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styleForm.css">
+</head>
+
+   <body>
+
+     <h1>GoJob</h1>
+
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+
+              <div class="col-lg-6">
+                  <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Campo Obrigat&oacute;rio</strong></div>
+
+                  <!--caixa pequena-->
+                  <div class="form-group">
+                      <label for="nome">Insira seu nome</label>
+                      <div class="input-group">
+                          <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu Nome" required>
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                      </div>
+                  </div>
+<!-- PRIMEIRA PARTE DO CURRICULO EU PROFISSIONAL-->
+                  <div id="euProfissional">
+                    <h2>Eu Profissional</h2>
+                    <!--breve resumo da carreira-->
+                    <div class="form-group">
+                        <label for="resumo">Resumo</label>
+                        <div class="input-group">
+                            <textarea placeholder="Fa&ccedil;a um resumo de sua carreira..." name="resumo" id="resumo" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                    <!--comentario sobre objetivos proficionais-->
+                                          <div class="form-group">
+                        <label for="objetivos">Coment&aacute;rio</label>
+                        <div class="input-group">
+                            <textarea placeholder="Comente sobre seus objetivos profissionais..." name="objetivos" id="objetivos" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                    <!-- O que voce espera da nova empresa -->
+                    <div class="form-group">
+                        <label for="expectativa">Expectativa</label>
+                        <div class="input-group">
+                            <textarea placeholder="O que voc&ecirc; espera da nova empresa?" name="expectativa" id="expectativa" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+
+
+                  </div>
+
+<!-- SEGUNDA PARTE DO CURRICULO EXPERIENCIA PROFISSIONAL -->
+
+                      <div class="box" >
+
+                        <div id="experienciaProfissional">
+                          <h2>Experi&ecirc;ncia profissional</h2>
+                            <table>
+                              <tr>
+                                <td><!--campo para inserir cargo na empresa-->
+                                  <div class="form-group">
+                                      <label for="cargo">Cargo</label>
+                                      <div class="input-group">
+                                          <input type="text" class="form-control" name="cargo" id="cargo" placeholder="Cargo que ocupava" required>
+                                      </div>
+                                  </div>
+                                </td>
+                                <td><!--campo para inserir nome da empresa-->
+                                  <div class="form-group">
+                                      <label for="nomeEmpresa">Nome da empresa</label>
+                                      <div class="input-group">
+                                          <input type="text" class="form-control" name="nomeEmpresa" id="nomeEmpresa" placeholder="Nome da empresa" required>
+                                      </div>
+                                  </div>
+                                </td>
+
+                              </tr>
+                            </table>
+
+
+
+
+                          <!-- descricao principais atividades -->
+                          <div class="form-group">
+                              <label for="descricaoAtividades">Descri&ccedil;&atilde;o</label>
+                              <div class="input-group">
+                                  <textarea placeholder="Descreva as principais atividades, projetos, entregas extras, etc." name="descricaoAtividades" id="descricaoAtividades" class="form-control" rows="5" required></textarea>
+                              </div>
+                          </div>
+                          <button class="btn btn-block btn-primary" ng-click="adicionarContato(contato)">Adicionar Cargo</button>
+
+                  </div><!--fim div class box-->
+              </div>
+          </form>
+          <button class="btn btn-block btn-primary" id="btnFim">Adicionar Curriculo</button>
+
+
+
+
+   </body>
+</html>

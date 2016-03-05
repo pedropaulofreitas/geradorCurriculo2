@@ -1,0 +1,16 @@
+|index.html
+|public
+>------|images
+>------|fonts
+>------|javascript
+>------>------|js-bootstrap
+>------|stylesheet
+>------>------|style.css
+>------>------|css-bootstrap
+|routes
+>------|index.js
+>------|users.js
+|views
+>------|errors.ejs
+>------|index.ejs
+|bin

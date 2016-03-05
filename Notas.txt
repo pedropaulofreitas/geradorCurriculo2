@@ -1,0 +1,11 @@
+->para testar
+    npm install                                 = resolve dependencias(packages.js)
+    DEBUG=gCurriculo:* npm start                = da start no server(manual do expressjs)
+    localhost:3000                              = acessa o host(routes/index.js)
+
+->os diretorios public e view podem ser acessados direto na raiz(app.js)
+->app.use('/', routes);// index.js fica como pagina inicial *ver o valor de routes no app.js
+->o roteamente esta sendo feito no routes/index.js(/)
+
+
+**um teste valido para entender o roteador é rodar localhost:3000/helloworld

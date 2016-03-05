@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link href="stylesheets/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="head-wrapper">
+            <h1 class="font-banner"><big><%= title %></big></h1>
+        </div>
+        <div id="body-wrapper">
+            <div class="jumbo-text">
+                <article>
+                    <p><big><big>Faca login ou se cadastre para gerar seu curriculo</big></big></p>
+                </article>
+                <br>
+                <% if (!user) { %>
+                    <a href="/auth/facebook" class="btn btn-primary">Login with facebook</a>
+                    &nbsp&nbsp
+                <% } else { %>
+                    <a href="/auth/facebook" class="btn btn-primary">Gerar Curriculo</a>
+                    &nbsp&nbsp
+                <% } %>
+
+            </div>
+        </div>
+        <div id="footer-wrapper" class="footer">
+            <h5>Grub Development Groub - <small>@Copyrights 2015.</small></h5>
+        </div>
+    </div>
+</body>
+
+</html>
